@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+  "name": "Переворачиватель диалогов ВК",
+  "description": "Меняет лейаут диалогов в новом дизайне Вконтакте.",
+  "version": "1.0",
+
+  "content_scripts": [
+	    {
+	        "matches": ["https://*vk.com/im*"],
+	        "js": ["content.js"]
+	    }
+	],
+
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ]
+}
